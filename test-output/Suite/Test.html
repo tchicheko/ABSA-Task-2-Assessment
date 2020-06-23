@@ -1,18 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="86848" started-at="2020-06-23T21:50:55Z" finished-at="2020-06-23T21:52:22Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="86848" started-at="2020-06-23T21:50:55Z" finished-at="2020-06-23T21:52:22Z">
-      <class name="Assessment.AddUser">
-        <test-method status="FAIL" signature="inititialize()[pri:0, instance:Assessment.AddUser@536dbea0]" name="inititialize" is-config="true" duration-ms="0" started-at="2020-06-23T23:50:55Z" finished-at="2020-06-23T23:50:55Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 23 23:50:55 CAT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86848 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Assessment.AddUser.inititialize()'><b>inititialize</b><br>Test class: Assessment.AddUser</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -39,12 +105,35 @@ remote stacktrace: Backtrace:
 	BaseThreadInitThunk [0x7541F989+25]
 	RtlGetAppContainerNamedObjectPath [0x76EF7084+228]
 	RtlGetAppContainerNamedObjectPath [0x76EF7054+180]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Resources.base.initializeDriver(base.java:33)
+	at Assessment.AddUser.inititialize(AddUser.java:27)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056234595", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2056234595'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -94,10 +183,10 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at Resources.base.initializeDriver(base.java:33)
 	at Assessment.AddUser.inititialize(AddUser.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -123,60 +212,35 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inititialize -->
-        <test-method status="SKIP" signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Assessment.AddUser@536dbea0]" name="addUser" duration-ms="226" started-at="2020-06-23T23:52:22Z" data-provider="getData" finished-at="2020-06-23T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FName1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[LName1]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[User1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Pass1]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Company AAA]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Admin@mail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[82555]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Assessment.AddUser.teardown()'><b>teardown</b><br>Test class: Assessment.AddUser</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Assessment.AddUser.addUser()'><b>addUser</b><br>Test class: Assessment.AddUser<br>Parameters: FName1, LName1, User1, Pass1, Company AAA, Admin, Admin@mail.com, 82555</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -203,12 +267,35 @@ remote stacktrace: Backtrace:
 	BaseThreadInitThunk [0x7541F989+25]
 	RtlGetAppContainerNamedObjectPath [0x76EF7084+228]
 	RtlGetAppContainerNamedObjectPath [0x76EF7054+180]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Resources.base.initializeDriver(base.java:33)
+	at Assessment.AddUser.inititialize(AddUser.java:27)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1374217958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1374217958'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -258,10 +345,10 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at Resources.base.initializeDriver(base.java:33)
 	at Assessment.AddUser.inititialize(AddUser.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -287,60 +374,14 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method status="SKIP" signature="addUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Assessment.AddUser@536dbea0]" name="addUser" duration-ms="3" started-at="2020-06-23T23:52:22Z" data-provider="getData" finished-at="2020-06-23T23:52:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FName2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[LName2]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[User2]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Pass2]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Company BBB]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Customer]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[cusomter@mail.com]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[82555]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+</pre></div></td>
+<td>0</td>
+<td>Assessment.AddUser@536dbea0</td></tr>
+<tr>
+<td title='Assessment.AddUser.addUser()'><b>addUser</b><br>Test class: Assessment.AddUser<br>Parameters: FName2, LName2, User2, Pass2, Company BBB, Customer, cusomter@mail.com, 82555</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -367,12 +408,35 @@ remote stacktrace: Backtrace:
 	BaseThreadInitThunk [0x7541F989+25]
 	RtlGetAppContainerNamedObjectPath [0x76EF7084+228]
 	RtlGetAppContainerNamedObjectPath [0x76EF7054+180]
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-1F69PF7', ip: '192.168.88.188', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at Resources.base.initializeDriver(base.java:33)
+	at Assessment.AddUser.inititialize(AddUser.java:27)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1459016715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1459016715'><pre>org.openqa.selenium.WebDriverException: chrome not reachable
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-1F69PF7&apos;, ip: &apos;192.168.88.188&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
 	Ordinal0 [0x00CC9563+2725219]
@@ -422,10 +486,10 @@ remote stacktrace: Backtrace:
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
 	at Resources.base.initializeDriver(base.java:33)
 	at Assessment.AddUser.inititialize(AddUser.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -451,17 +515,9 @@ remote stacktrace: Backtrace:
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addUser -->
-        <test-method status="SKIP" signature="teardown()[pri:0, instance:Assessment.AddUser@536dbea0]" name="teardown" is-config="true" duration-ms="0" started-at="2020-06-23T23:52:22Z" finished-at="2020-06-23T23:52:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- Assessment.AddUser -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>0</td>
+<td>Assessment.AddUser@536dbea0</td></tr>
+</table><p>
+</body>
+</html>

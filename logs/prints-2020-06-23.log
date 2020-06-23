@@ -1,0 +1,8 @@
+23:07:33.670 [main] INFO  Resources.base - Validation done for User List Table done
+23:07:34.875 [main] INFO  Resources.base - Customer is Company BBB
+23:07:35.671 [main] INFO  Resources.base - Submit button clicked
+23:07:39.968 [main] INFO  Resources.base - Browser closed
+23:17:06.037 [main] INFO  Resources.base - Driver is initialised
+23:17:48.071 [main] INFO  Resources.base - Navigated to Userlist webpage 
+23:17:48.360 [main] INFO  Resources.base - userlist object created
+23:17:48.781 [main] INFO  Resources.base - Validation done for User List Table done
