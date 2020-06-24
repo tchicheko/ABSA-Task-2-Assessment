@@ -123,7 +123,7 @@ public class AddUser extends base {
 		users[0][4]="Company AAA";
 		users[0][5]="Admin";
 		users[0][6]="Admin@mail.com";
-		users[0][7]="82555";
+		users[0][7]="082555";
 		
 		users[1][0]="FName2";
 		users[1][1]="LName2";
@@ -132,7 +132,7 @@ public class AddUser extends base {
 		users[1][4]="Company BBB";
 		users[1][5]="Customer";
 		users[1][6]="cusomter@mail.com";
-		users[1][7]="82555";
+		users[1][7]="083444";
 		
 		return users;
 		

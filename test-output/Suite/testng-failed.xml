@@ -10,6 +10,7 @@
         <methods>
           <include name="addUser" invocation-numbers="0 1"/>
           <include name="inititialize"/>
+          <include name="teardown"/>
         </methods>
       </class> <!-- Assessment.AddUser -->
     </classes>

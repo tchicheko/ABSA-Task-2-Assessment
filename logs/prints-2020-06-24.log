@@ -1,0 +1,7 @@
+10:15:18.931 [main] INFO  Resources.base - Navigated to Userlist webpage 
+10:15:19.251 [main] INFO  Resources.base - userlist object created
+10:15:19.748 [main] INFO  Resources.base - Validation done for User List Table done
+10:15:23.872 [main] INFO  Resources.base - Customer is Company AAA
+10:15:24.882 [main] INFO  Resources.base - Submit button clicked
+10:15:24.929 [main] INFO  Resources.base - userlist object created
+10:15:24.994 [main] INFO  Resources.base - Validation done for User List Table done
